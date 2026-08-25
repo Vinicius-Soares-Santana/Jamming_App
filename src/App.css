@@ -1,3 +1,23 @@
+.spotifyLoginButton {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  color: white;
+  background: linear-gradient(to bottom, limegreen, darkgreen);
+  border: 2px solid black;
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+}
+.spotifyLoginButton:hover {
+  border-color: black;
+  border-width: 1px 3px 3px 1px;
+  cursor: pointer;
+}
+.spotifyLoginButton:focus-visible {
+  outline: 2px solid;
+  outline-offset: 2px;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;

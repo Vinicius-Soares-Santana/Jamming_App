@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 const client_Id = '7ab8156d56d249809c35bce4a868eee8';
 
 const redirect_uri =
-  'https://vitejsvitezfrvuyds-myxq--5173--017acfb7.local-corp.webcontainer.io';
+  'http://127.0.0.1:5173/';
 
 const generateRandomString = (length) => {
   const possible =

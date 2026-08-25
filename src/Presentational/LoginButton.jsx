@@ -1,11 +1,11 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { loginSpotify } from '../Containers/Spotify';
 
-function loginButton() {
+function loginButton(props) {
   return (
     <button
-      onClick={loginSpotify}
+      className={props.className}
+      onClick={props.loginSpotify}
       style={{
         color: 'black',
         backgroundColor: 'white',

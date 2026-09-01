@@ -15,6 +15,7 @@ function SongCard(props) {
       <br />
 
       <div className="SongCard">
+        <img src={props.songData.album.images[0].url} />
         <h2 className="SongTitle">{props.songData.name}</h2>
         <h4 className="albumName">{props.songData.album.name}</h4>
         <p className="songLength">{timeString(props.songData.duration_ms)}</p>

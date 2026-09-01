@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
-  let [loginDone, setLoginDone] = useState(false);
+  const [loginDone, setLoginDone] = useState(false);
   const [token, setToken] = useState(null);
 
   let code;
@@ -21,7 +21,7 @@ function App() {
   const client_Id = '7ab8156d56d249809c35bce4a868eee8';
 
   const redirect_uri =
-    'https://vitejsvitezfrvuyds-myxq--5173--017acfb7.local-corp.webcontainer.io';
+    'http://127.0.0.1:5173/';
 
   const generateRandomString = (length) => {
     const possible =

@@ -8,13 +8,12 @@ import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
-  const [loginDone, setLoginDone] = useState(false);
+  let [loginDone, setLoginDone] = useState(false);
   const [token, setToken] = useState(null);
 
   let code;
   let codeVerifier;
   let tokenResponse;
-
 
   //My Code ------------------------------------------------------------------------------------------
 
@@ -101,20 +100,22 @@ function App() {
     loginVerification();
   }, []);
 
-  
-
   if (loginDone) {
-    return <Jamming_main_screen token={token} />
+    return <Jamming_main_screen token={token} />;
   } else {
-    return <>
+    return (
+      <>
         <section id="center">
-            <LoginButton className="spotifyLoginButton" loginSpotify={loginSpotify} />
+          <LoginButton
+            className="spotifyLoginButton"
+            loginSpotify={loginSpotify}
+          />
         </section>
-        </>
+      </>
+    );
   }
 
   //----------------------------------------------------------------------------------------------
-
 }
 
 export default App;
